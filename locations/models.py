@@ -5,12 +5,12 @@ from django.db import models
 
 # Create your models here.
 
-class Location(Base):
-    name  = models.CharField(max_length=200)
-    north = DecimalField(max_digits=9, decimal_places=6)
-    south = DecimalField(max_digits=9, decimal_places=6)
-    east  = DecimalField(max_digits=9, decimal_places=6)
-    west  = DecimalField(max_digits=9, decimal_places=6)
+class Location(models.Model):
+    name  = models.CharField(max_length=100)
+    north = models.DecimalField(max_digits=9, decimal_places=6)
+    south = models.DecimalField(max_digits=9, decimal_places=6)
+    east  = models.DecimalField(max_digits=9, decimal_places=6)
+    west  = models.DecimalField(max_digits=9, decimal_places=6)
 
     def __str__(self):
         return self.name
