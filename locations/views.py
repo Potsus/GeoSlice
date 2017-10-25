@@ -16,7 +16,7 @@ def index(request):
 
 
 class map_view(TemplateView):
-    template_name = 'map.html'
+    template_name = 'map_custom.html'
 
     def __init__(self, logger=logging.getLogger(__name__)):
         self.logger = logger
