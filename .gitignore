@@ -104,3 +104,5 @@ ENV/
 .DS_store
 
 db.sqlite3
+
+/data

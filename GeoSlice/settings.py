@@ -76,10 +76,14 @@ WSGI_APPLICATION = 'GeoSlice.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'HOST': 'geoslicedb',
+        'PORT': 5432,
     }
 }
+
 
 # global fixtures dir
 # look in <appname>/fixtures/ for app specific fixtures
