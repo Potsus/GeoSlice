@@ -18,6 +18,6 @@ services:
     ports:
       - "8000:8000"
     depends_on:
-      - geoslicedb
+      - "geoslicedb"
     entrypoint: ./docker-entrypoint.sh
     command: python3 manage.py runserver 0.0.0.0:8000
