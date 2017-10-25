@@ -27,10 +27,8 @@ class map_view(TemplateView):
 
         locations = list(Location.objects.all())
         #loc = random.choice(locations)
-        #lat = (loc.north + loc.south)/2,
-        #lon = (loc.east + loc.west)/2,
-        lat = 0
-        lon = 0
+        lat = 0 #(loc.north + loc.south)/2,
+        lon = 0 #(loc.east + loc.west)/2,
         zoom = 2
 
         context = {

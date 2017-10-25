@@ -81,6 +81,12 @@ DATABASES = {
     }
 }
 
+# global fixtures dir
+# look in <appname>/fixtures/ for app specific fixtures
+FIXTURE_DIRS = [
+    'fixtures',
+]
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
